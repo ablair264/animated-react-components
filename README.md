@@ -8,6 +8,12 @@ Expert guidance for analyzing React components and implementing premium, product
 - Selects the right component library for the job
 - Ensures accessibility and performance best practices
 
+## Production quality
+- Uses shared motion tokens for consistent timing and easing
+- Enforces reduced-motion fallbacks and keyboard-safe interactions
+- Prioritizes transform/opacity and in-view gating for performance
+- Includes QA checks for reduced motion, layout stability, and smoothness
+
 ## When to use
 - You want to enhance an existing React UI with motion
 - You need recommendations from React Bits, Aceternity UI, Magic UI, or Motion

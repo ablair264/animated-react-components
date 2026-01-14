@@ -77,6 +77,19 @@ Every component must be:
 - Accessible (respects `prefers-reduced-motion`)
 - Performant (prefer CSS/GPU-accelerated)
 - Follow the implementation checklist in `references/motion.md`
+- Follow production standards in `references/production-quality.md`
+- Use production patterns from `references/production-patterns.md`
+
+## Production Quality Bar
+
+- Keep motion consistent with shared tokens (duration, easing, stagger)
+- Prefer variants and declarative motion over ad-hoc animations
+- Avoid non-deterministic render output (SSR-safe defaults)
+- Provide reduced-motion fallbacks for every effect
+- Validate performance on low-end devices and mobile
+
+See `references/production-quality.md` and `references/production-patterns.md`
+for detailed standards, patterns, and QA checks.
 
 ## Design Principles
 
@@ -198,4 +211,6 @@ Deliver responses in this shape:
 - 2-3 high-impact moments with intent
 - Component/library picks with reasons
 - Implementation notes (reduced motion, perf guardrails)
+- Motion tokens (duration, easing, stagger)
+- QA checks (reduced motion, keyboard, perf)
 - Integration plan (where changes land in the code)
